@@ -1,4 +1,11 @@
+#VMの設定は対象外
 .vagrant/
-Vagrantfile
+#ログファイル
 *.log
+#windowsのシステムファイル
 Thumbs.db
+#サービスそのものは別のリポジトリで管理
+/auto-proof-reading/
+#IDEでプロジェクトを作成すると作成される、".idea/"と"[project-name].iml"
+.idea/**/workspace.xml
+.idea/**/tasks.xml
