@@ -69,4 +69,8 @@ Vagrant.configure("2") do |config|
   # SHELL
 
   config.vm.synced_folder ".", "/vagrant", type:"virtualbox"
+
+  config.vm.provision :shell, run: "always", :inline => <<-EOT
+      sudo service httpd restart
+  EOT
 end
